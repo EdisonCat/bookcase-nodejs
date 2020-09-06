@@ -4,7 +4,9 @@ const morgan = require('morgan');
 const graphqlHTTP = require('express-graphql').graphqlHTTP;
 const schema = require('./schema/schema');
 const mongoose = require('mongoose');
+const cors = require('cors');
 
+app.use(cors());
 mongoose.connect(
     'mongodb+srv://dev:' + process.env.MONGODB_ATLAS_PWD + '@cluster0.xtiy0.mongodb.net/<dbname>?retryWrites=true&w=majority', 
     {

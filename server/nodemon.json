@@ -1,5 +1,5 @@
 {
     "env": {
-        "MONGODB_ATLAS_PWD": "A123456a"
+        "MONGODB_ATLAS_PWD": ""
     }
 }
